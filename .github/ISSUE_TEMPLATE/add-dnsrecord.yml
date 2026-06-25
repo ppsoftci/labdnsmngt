@@ -8,7 +8,7 @@ body:
     attributes:
       label: Zone DNS
       description: "Nom FQDN de la zone DNS (ex: example.com.)"
-      placeholder: example.com.
+      placeholder: " "
     validations:
       required: true
 
@@ -17,7 +17,7 @@ body:
     attributes:
       label: Nom de l’enregistrement
       description: "Nom du record (ex: www)"
-      placeholder: www
+      placeholder: " "
     validations:
       required: true
 
@@ -46,7 +46,7 @@ body:
     attributes:
       label: Valeur de l’enregistrement
       description: Adresse IP ou cible DNS ou ...
-      placeholder: ""
+      placeholder: " "
     validations:
       required: true
 
@@ -55,7 +55,7 @@ body:
     attributes:
       label: TTL
       description: "Time To Live (optionnel, en secondes)"
-      placeholder: ""
+      placeholder: " "
     validations:
       required: false
 
@@ -64,6 +64,6 @@ body:
     attributes:
       label: Commentaire
       description: "Commentaire sur l’enregistrement (optionnel)"
-      placeholder: ""
+      placeholder: " "
     validations:
       required: false
