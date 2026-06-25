@@ -1,11 +1,6 @@
 name: Test Bug Report
 description: File a bug report.
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
-type: bug
+title: "[Bug]: T"
 body:
   - type: markdown
     attributes:
