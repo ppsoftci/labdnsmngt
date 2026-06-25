@@ -1,1 +1,69 @@
+name: Ajouter un enregistrement DNS Micetro
+description: Formulaire pour demander la création d'un enregistrement DNS dans Micetro
+title: "[DNS] Ajout d'un enregistrement"
+labels: ["dns", "micetro"]
+body:
+  - type: input
+    id: dns_zone
+    attributes:
+      label: Zone DNS
+      description: Nom FQDN de la zone DNS (ex: example.com.)
+      placeholder: example.com.
+    validations:
+      required: true
 
+  - type: input
+    id: dns_name
+    attributes:
+      label: Nom de l’enregistrement
+      description: Nom du record (ex: www)
+      placeholder: www
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dns_type
+    attributes:
+      label: Type d’enregistrement
+      description: Type DNS supporté par Micetro
+      options:
+        - A
+        - AAAA
+        - CNAME
+        - MX
+        - TXT
+        - SRV
+        - PTR
+        - NS
+        - SOA
+        - NAPTR
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: dns_data
+    attributes:
+      label: Valeur de l’enregistrement
+      description: Adresse IP ou cible DNS ou ...
+      placeholder: 192.168.1.1
+    validations:
+      required: true
+
+  - type: input
+    id: dns_ttl
+    attributes:
+      label: TTL
+      description: Time To Live (optionnel, en secondes)
+      placeholder: 3600
+    validations:
+      required: false
+
+  - type: textarea
+    id: dns_comment
+    attributes:
+      label: Commentaire
+      description: Commentaire sur l’enregistrement (optionnel)
+      placeholder: Ajouter un commentaire ici...
+    validations:
+      required: false
